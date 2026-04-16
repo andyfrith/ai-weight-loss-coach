@@ -20,7 +20,7 @@
 **Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
 **Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
 **Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
+**Testing**: None—automated tests are prohibited by `.specify/memory/constitution.md` (Principle V). Manual verification only.  
 **Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
 **Project Type**: [e.g., library/cli/web-service/mobile-app/compiler/desktop-app or NEEDS CLARIFICATION]  
 **Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
@@ -31,7 +31,10 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- **No automated tests**: Plans, specs, and tasks MUST NOT include unit, integration, or E2E tests (see constitution Principle V).
+- **Stack**: Implementation MUST use Next.js, React, React Hook Form, Shadcn, Tailwind CSS, and Zustand at versions declared in root `package.json`.
+- **UX & layout**: Scope MUST respect simple UX and responsive design (constitution Principles II–III).
+- **Dependencies**: New dependencies MUST be justified under Principle IV (minimal dependencies).
 
 ## Project Structure
 
